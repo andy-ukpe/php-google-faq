@@ -40,18 +40,26 @@ $array_faq = [
   ],
 ];
  ?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <head>
 
- <!-- Creazione ciclo eachfor per stampare estrapolare le informazioni dal database -->
-<?php  foreach ($array_faq as $array) { ?>
-  <?php foreach ($array as $faq) {?>
-    <!-- estrapolare ogni domanda -->
-    <ul>
-      <li>Domanda: <?php echo $faq['question']?><br>
-          Risposta: <?php echo $faq['answer'] ?></li>
+    </head>
+    <body>
+      <!-- Creazione ciclo eachfor per stampare estrapolare le informazioni dal database -->
+     <?php  foreach ($array_faq as $array) { ?>
 
+         <!-- estrapolare ogni domanda -->
 
-    </ul>
+           <h2>Domanda: <?php echo $array['question']?><h2>
+           <p>Risposta: <?php echo $array['answer'] ?></p>
 
-
-  <?php } ?>
-<?php } ?>
+     <?php } ?>
+    </body>
+  </body>
+</html>
